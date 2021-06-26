@@ -1,4 +1,4 @@
-import * as firebase from "firebase";
+import  firebase from "firebase/firebase";
 var firebaseConfig = {
     apiKey: "AIzaSyBaqtESmKXr1PrOniaMsAPQucSPavbR_S8",
     authDomain: "react-crud-2e7bd.firebaseapp.com",
@@ -10,5 +10,7 @@ var firebaseConfig = {
     measurementId: "G-9HY4WS089N"
 };
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-firebase.analytics();
+var firDb=firebase.initializeApp(firebaseConfig);
+
+
+export default firDb.database().ref()
